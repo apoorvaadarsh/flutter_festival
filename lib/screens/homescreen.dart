@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_festival/screens/add_screen.dart';
 import '../widgets/expense_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,6 +20,12 @@ class HomeScreen extends StatelessWidget {
           },
           itemCount: 20,
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushNamed(AddScreen.routeName);
+        },
+        child: Icon(Icons.add),
       ),
     );
   }

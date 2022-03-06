@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_festival/screens/add_screen.dart';
 import 'package:flutter_festival/screens/homescreen.dart';
 
 void main() {
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),
+      routes: {
+        AddScreen.routeName: (context) => AddScreen(),
+      },
     );
   }
 }
