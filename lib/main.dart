@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_festival/models/item.dart';
 import 'package:flutter_festival/screens/add_screen.dart';
 import 'package:flutter_festival/screens/homescreen.dart';
 
